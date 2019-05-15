@@ -1,6 +1,6 @@
 {
   "name": "exchange",
-  "homepage": "http://exchange.soa.cmu.edu",
+  "homepage": "https://exchange.soa.cmu.edu",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
