@@ -23,13 +23,21 @@
 
         img {
             height: 100vh;
+            display: inline-block;
         }
+
+        @media only screen and (max-width: 600px) { 
+			img {
+				display: block;
+			}
+		}
     </style>
   </head>
   <body>
       <div id="content">
           <div id="copy">
-              <img src="assets/digitalPoster_SR-01.png" />
+              <img alt="Main Poster" src="assets/digitalPoster_SR-01.png" />
+              <img alt="Event Schedule" src="assets/digitalPoster_Events-02.png" />
           </diV>
       </div>
   </body>
