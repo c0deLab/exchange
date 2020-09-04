@@ -1,0 +1,50 @@
+<html>
+
+<head><title>EX-CHANGE 2020 | map</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="scripts/baseline.css">
+<script src="scripts/behavior.js"></script>
+</head>
+
+<body
+onLoad="MM_preloadImages('images/h.gif','images/map_B.gif','images/map_4.gif','images/map_3.gif','images/map_2.gif','images/map_1.gif','images/map_L.gif')">
+
+<div id="topbar">
+<div style="align-content: left;" >
+<a href="./">
+<img src="images/a.png" id="logo" alt="EX-CHANGE" onMouseOver="MM_swapImage('logo','','images/h.gif',1)" onMouseOut="MM_swapImgRestore()"></a></div>
+<div align=right>
+    <p style="padding:.25em 1.5em 0 0;">
+    <a class="nav" href="map.html">MAP</a><br>
+    <a class="nav" href="info.html">INFO</a><br>
+    <a class="nav" href="help.html">HELP</a></p></div>
+    </div>
+
+
+<div><br>
+<img src="images/ex-change_map2.gif" width="1600" height="1880" usemap="#PERSPECTIVE" id="PERSPECTIVE" border="0">
+<map name="PERSPECTIVE">
+<area shape="rect" coords="166,91,1436,224" href="spaces/rooftopfromelevator.html" alt="Jump to fourth floor" title="Jump to fourth floor" onMouseOver="MM_swapImage('PERSPECTIVE','','images/ex-change_map2_4.gif',1)" onMouseOut="MM_swapImgRestore()">
+<area shape="rect" coords="166,281,1436,571" href="spaces/rotundafromelevator.html" alt="Jump to third floor" title="Jump to third floor" onMouseOver="MM_swapImage('PERSPECTIVE','','images/ex-change_map2_3.gif',1)" onMouseOut="MM_swapImgRestore()">
+<area shape="rect" coords="162,626,1436,917" href="spaces/colonnadefromelevator.html" alt="Jump to second floor" title="Jump to second floor" onMouseOver="MM_swapImage('PERSPECTIVE','','images/ex-change_map2_2.gif',1)" onMouseOut="MM_swapImgRestore()">
+<area shape="rect" coords="162,984,1436,1271" href="spaces/hallfromelevator.html" alt="Jump to first floor" title="Jump to first floor" onMouseOver="MM_swapImage('PERSPECTIVE','','images/ex-change_map2_1.gif',1)" onMouseOut="MM_swapImgRestore()">
+<area shape="rect" coords="162,1329,1436,1604" href="spaces/entryfromelevator.html" alt="Jump to ground floor" title="Jump to ground floor" onMouseOver="MM_swapImage('PERSPECTIVE','','images/ex-change_map2_L.gif',1)" onMouseOut="MM_swapImgRestore()">
+<area shape="rect" coords="166,1651,1436,1796" href="spaces/tunnelsfromelevator.html" alt="Jump to basement" title="Jump to basement" onMouseOver="MM_swapImage('PERSPECTIVE','','images/ex-change_map2_B.gif',1)" onMouseOut="MM_swapImgRestore()">
+ </map>
+</div>
+
+<div><p>Drawing not to scale.</p></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<!-- move to shared JS file responsive map -->
+<script src="scripts/responsivemap.js"></script>
+<script>
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+	});
+</script>
+</body>
+    <footer>&#169; 2020 Carnegie Mellon University School of Architecture | All Rights Reserved</footer>
+</html>

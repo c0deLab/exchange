@@ -1,0 +1,88 @@
+body {
+        background-color:#cccccc;color:#696969;
+        font-family:'Encode Sans Semi Expanded',sans-serif;font-size:16px;font-weight:400;
+		    width: 80%;
+        max-width: 1600;
+        margin-left: auto;
+        margin-right: auto;}
+img[usemap] {
+		border: none;
+		height: auto;
+		max-width: 1600;
+		width: 100%;}
+
+.basic {
+		border: none;
+		height: auto;
+		max-width: 1600;
+		width: 100%;}
+
+a img {border:none;}
+a.nav {
+color:#ffffff;text-decoration:none;
+-webkit-transition:color .4s ease-in;-moz-transition:color .4s ease-in;-o-transition:color .4s ease-in;transition:color .4s ease-in;}
+a.nav:link {color:#ffffff;text-decoration:none;}
+a.nav:visited {color:#ffffff;text-decoration:none;}
+a.nav:hover {color:#ffee21;text-decoration:none;}
+a.nav:focus {color:#ffee21;text-decoration:none;}
+a.nav:active {color:#ffffff;text-decoration:none;}
+a {color:#000000;text-decoration:none;}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color:#ffee21;
+  padding:1em;
+  width:1em;
+  float: right;
+  margin:12em -3em 0 0;
+}
+a.sticky {
+color:#000000;text-decoration:none;}
+
+
+#topbar {display: grid;font-size:1.4em;
+      grid-template-columns: 50% 50%;
+      justify-content: space-between;}
+#logo {width:6.6em; height: auto}
+
+.fullsize {
+    margin:12em 0 12em 0;}
+.fullsize img { height:auto;width:100%;}
+
+
+.grid {
+    margin:12em 0 12em 0;
+    padding:1em;background-color:#333333;
+column-count:3;column-gap:.5em;line-height:0;
+-webkit-column-count:3;-webkit-column-gap:.5em;-moz-column-count:3;-moz-column-gap:.5em;}
+.grid img {
+height:auto;margin-bottom:.5em;width:100%;
+opacity:0.75;filter:alpha(opacity=75);
+-webkit-backface-visibility:hidden;-webkit-transition: .4s ease-in;-moz-transition: .4s ease-in;-o-transition: .4s ease-in;transition: .4s ease-in;}
+.grid img:hover {opacity:1.0;filter:alpha(opacity=100);}
+
+#player-container #play-pause {
+  cursor: pointer;
+  text-indent: -999999px;
+  height:40px;
+  width: 40px;
+  background-image: url('../images/playbutton.png');
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:20px;
+  position:fixed;
+  left:0;
+  bottom:0;
+}
+.play {
+  background-image: url('../images/playbutton.png');
+}
+.pause {
+   background-image: url('../images/pausebutton.png')!important;
+}
+
+footer{
+    font-size:.8em;
+}

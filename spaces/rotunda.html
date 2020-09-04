@@ -1,0 +1,85 @@
+<html>
+
+<!-- replaceall roomname with designated title -->
+<head><title>EX-CHANGE 2020 | Rotunda</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../scripts/baseline.css">
+<script src="../scripts/behavior.js"></script>
+</head>
+
+<!-- add any mouseover jpgs for image map between single quotes -->
+<body
+onLoad="MM_preloadImages('../images/rotunda/rotunda_elevatorhover.jpg','../images/rotunda/rotunda_solariumhover.jpg','../images/rotunda/rotunda_wingshover.jpg')">
+
+<div id="topbar">
+<div style="align-content: left;" >
+<a href="../">
+<img src="../images/a.png" id="logo" alt="EX-CHANGE" onMouseOver="MM_swapImage('logo','','../images/h.gif',1)" onMouseOut="MM_swapImgRestore()"></a></div>
+<div align=right>
+    <p style="padding:.25em 1.5em 0 0;">
+    <a class="nav" href="../map.html">MAP</a><br>
+    <a class="nav" href="../info.html">INFO</a><br>
+    <a class="nav" href="../help.html">HELP</a></p></div>
+    </div><div>
+
+<!-- replaceall TESTempty with page name sequence -->
+<img src="../images/rotunda/rotunda.jpg" width="1600" height="900" usemap="#PERSPECTIVE" id="PERSPECTIVE" border="0">
+<map name="PERSPECTIVE">
+
+<area shape="poly" alt="" coords="233,458, 233,559, 232,563, 189,522, 189,449, 206,447, 211,447, 233,458" href="elevatoratfloor3.html" alt="To elevator" title="To elevator" onMouseOver="MM_swapImage('PERSPECTIVE','','../images/rotunda/rotunda_elevatorhover.jpg',1)" onMouseOut="MM_swapImgRestore()">
+
+<area shape="poly" alt="" coords="1333,864, 1333,863, 1335,861, 1375,797, 1382,794, 1398,798, 1440,807, 1439,810, 1411,854, 1396,879, 1394,879, 1379,875, 1333,864" href="solarium.html" alt="To Solarium" title="To Solarium" onMouseOver="MM_swapImage('PERSPECTIVE','','../images/rotunda/rotunda_solariumhover.jpg',1)" onMouseOut="MM_swapImgRestore()">
+
+<area shape="poly" alt="" coords="709,795, 716,792, 780,758, 789,758, 825,779, 820,782, 748,820, 740,819, 709,796, 709,795" href="wings.html" alt="To Wings" title="To Wings" onMouseOver="MM_swapImage('PERSPECTIVE','','../images/rotunda/rotunda_wingshover.jpg',1)" onMouseOut="MM_swapImgRestore()">
+
+<area shape="poly" alt="" coords="305,714, 305,709, 306,708, 327,682, 328,677, 310,615, 309,608, 316,608, 320,609, 348,611, 377,610, 463,611, 548,611, 554,610, 566,610, 601,614, 608,615, 608,619, 607,621, 594,654, 579,686, 580,690, 587,695, 596,693, 601,690, 605,690, 605,694, 602,703, 599,708, 596,715,
+594,719, 573,757,
+566,765, 557,774, 547,781, 536,788, 527,792, 518,794, 513,795, 486,810, 482,811, 479,807, 476,803, 397,761, 341,731, 305,714" href="#" onMouseOver="MM_swapImage('PERSPECTIVE','','../images/rotunda/rotunda_chairshover.gif',1)" onMouseOut="MM_swapImgRestore()">
+
+</map></div>
+</div>
+
+<!-- Audio Player. -->
+    
+<audio id="sound1" src="../sounds/57790891.mp3" preload="auto"></audio>
+<audio id="track">
+<source src="../sounds/rotunda_uxiXGpYGOXlOdot128.mp3" type="audio/mpeg" /></audio>
+
+<div id="player-container">
+<div id="play-pause" class="play">Play</div></div>
+
+<script type="text/javascript">
+    var track = document.getElementById('track');
+    var controlBtn = document.getElementById('play-pause');
+    function playPause() {
+        if (track.paused) {
+            track.play();
+            //controlBtn.textContent = "Pause";
+            controlBtn.className = "pause";
+        } else {
+            track.pause();
+             //controlBtn.textContent = "Play";
+            controlBtn.className = "play";
+        }
+    }
+
+    controlBtn.addEventListener("click", playPause);
+    track.addEventListener("ended", function() {
+      controlBtn.className = "play";
+    });
+    </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="../scripts/responsivemap.js"></script>
+<script>
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+	});
+</script>
+<br><br>
+</body>
+<footer>Party for your ears provided by <a href="https://m.soundcloud.com/hunyrocks" target="_blank">HUNY</a>.<br><br>&#169; 2020 Carnegie Mellon University School of Architecture | All Rights Reserved</footer>
+
+</html>

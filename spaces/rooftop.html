@@ -1,0 +1,82 @@
+<html>
+
+<!-- replaceall roomname with designated title -->
+<head><title>EX-CHANGE 2020 | Rooftop</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../scripts/baseline.css">
+<link rel="stylesheet" href="../scripts/simpleLightbox.min.css">
+<script src="../scripts/simpleLightbox.min.js"></script>
+<script src="../scripts/behavior.js"></script>
+</head>
+
+<!-- add any mouseover jpgs for image map between single quotes -->
+<body
+onLoad="MM_preloadImages('../images/rooftop/rooftop_Esignhover.jpg','../images/rooftop/rooftop_capshover.gif')">
+
+<div id="topbar">
+<div style="align-content: left;" >
+<a href="../">
+<img src="../images/a.png" id="logo" alt="EX-CHANGE" onMouseOver="MM_swapImage('logo','','../images/h.gif',1)" onMouseOut="MM_swapImgRestore()"></a></div>
+<div align=right>
+    <p style="padding:.25em 1.5em 0 0;">
+    <a class="nav" href="../map.html">MAP</a><br>
+    <a class="nav" href="../info.html">INFO</a><br>
+    <a class="nav" href="../help.html">HELP</a></p></div>
+    </div><div>
+
+<!-- replaceall TESTempty with page name sequence -->
+<img src="../images/rooftop/rooftop.jpg" width="1600" height="900" usemap="#PERSPECTIVE" id="PERSPECTIVE" border="0">
+
+<map name="PERSPECTIVE">
+
+<!-- see Page Status spreadsheet for links and hover info -->
+<area shape="rect" coords="1449,695,1576,871" href="elevatoratfloor4.html" onMouseOver="MM_swapImage('PERSPECTIVE','','../images/rooftop/rooftop_Esignhover.jpg',1)" onMouseOut="MM_swapImgRestore()" alt="To elevator" title="To elevator">
+
+<area shape="poly" coords="0,0,1600,0,1600,622,1575,620,1503,512,1501,513,1435,623,1276,627,1276,641,667,640,304,639,220,616,58,617,0,629" onMouseOver="MM_swapImage('PERSPECTIVE','','../images/rooftop/rooftop_capshover.gif',1)" onMouseOut="MM_swapImgRestore()" alt="Congrats class of 2020!" title="Congrats class of 2020!">
+
+</map></div>
+
+<!-- Audio Player. -->
+    
+<audio id="sound1" src="../sounds/57790891.mp3" preload="auto"></audio>
+<audio id="track">
+<source src="../sounds/rooftop_90s00s.mp3" type="audio/mpeg" /></audio>
+
+<div id="player-container">
+<div id="play-pause" class="play">Play</div></div>
+
+<script type="text/javascript">
+    var track = document.getElementById('track');
+    var controlBtn = document.getElementById('play-pause');
+    function playPause() {
+        if (track.paused) {
+            track.play();
+            //controlBtn.textContent = "Pause";
+            controlBtn.className = "pause";
+        } else {
+            track.pause();
+             //controlBtn.textContent = "Play";
+            controlBtn.className = "play";
+        }
+    }
+
+    controlBtn.addEventListener("click", playPause);
+    track.addEventListener("ended", function() {
+      controlBtn.className = "play";
+    });
+    </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="../scripts/responsivemap.js"></script>
+<script>
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+	});
+</script>
+<br><br>
+</body>
+<footer>Party for your ears provided by <a href="https://m.soundcloud.com/hunyrocks" target="_blank">HUNY</a>.<br><br>&#169; 2020 Carnegie Mellon University School of Architecture | All Rights Reserved</footer>
+
+</html>

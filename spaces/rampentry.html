@@ -1,0 +1,81 @@
+<html>
+
+<!-- replaceall roomname with designated title -->
+<head><title>EX-CHANGE 2020 | Ramp entry</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../scripts/baseline.css">
+<link rel="stylesheet" href="../scripts/simpleLightbox.min.css">
+<script src="../scripts/simpleLightbox.min.js"></script>
+<script src="../scripts/behavior.js"></script>
+</head>
+
+<!-- add any mouseover jpgs for image map between single quotes -->
+<body
+onLoad="MM_preloadImages('../images/rampentry/rampentry_arrowtonichesfrontalhover.jpg','../images/rampentry/rampentry_arrowtoramphover.jpg','../images/rampentry/rampentry_arrowtostairshover.jpg')">
+
+<div id="topbar">
+<div style="align-content: left;" >
+<a href="../">
+<img src="../images/a.png" id="logo" alt="EX-CHANGE" onMouseOver="MM_swapImage('logo','','../images/h.gif',1)" onMouseOut="MM_swapImgRestore()"></a></div>
+<div align=right>
+    <p style="padding:.25em 1.5em 0 0;">
+    <a class="nav" href="../map.html">MAP</a><br>
+    <a class="nav" href="../info.html">INFO</a><br>
+    <a class="nav" href="../help.html">HELP</a></p></div>
+    </div><div>
+
+<!-- replaceall TESTempty with page name sequence -->
+<img src="../images/rampentry/rampentry.jpg" width="1600" height="900" usemap="#PERSPECTIVE" id="PERSPECTIVE" border="0">
+<map name="PERSPECTIVE">
+
+<area shape="poly" coords="1277,762,1245,760,1245,748,1128,737,1128,767,889,756,889,666,895,667,896,416,1061,500,1133,541,1134,569,1218,606,1218,632,1277,656" href="#midview1" alt="Zoom to the middle view" title="Zoom to the middle view"/>
+
+<area shape="poly" coords="719,491,824,493,824,548,719,544" href="nichesfrontal.html" alt="To Niches frontal" title="To Niches frontal" onMouseOver="MM_swapImage('PERSPECTIVE','','../images/rampentry/rampentry_arrowtonichesfrontalhover.jpg',1)" onMouseOut="MM_swapImgRestore()"/>
+
+<area shape="poly" coords="1024,821,1096,831,1094,831,1009,887,937,873,939,873" href="ramp.html" alt="To Ramp" title="To Ramp" onMouseOver="MM_swapImage('PERSPECTIVE','','../images/rampentry/rampentry_arrowtoramphover.jpg',1)" onMouseOut="MM_swapImgRestore()"/>
+
+<area shape="poly" coords="1546,466,1546,597,1451,593,1451,468" href="stairatfloor1.html" alt="To stairs" title="To stairs" onMouseOver="MM_swapImage('PERSPECTIVE','','../images/rampentry/rampentry_arrowtostairshover.jpg',1)" onMouseOut="MM_swapImgRestore()"/>
+
+</map></div>
+
+
+<div class="sticky"><a class="sticky"href="#PERSPECTIVE">&#8679;</a></div>
+
+
+<div id="midview1" class="grid"><div class="midview1">
+<!-- copy/paste lightbox content here, all jpg, png, gifs -->
+<a href="../workimage/F1948100MT10.gif" title="Mai Tian, Collage, Colony. For 48100: Foundation I: Critical Cyborg, F19."><img src="../workimage/F1948100MT10.gif" /></a>
+<a href="../workimage/F1948300SK01.jpg" title="Sarah Kang, Museum of Weather. For 48300: Environment, Form & Feedback, F19."><img src="../workimage/F1948300SK01.jpg" /></a>
+<a href="../workimage/F1948400XC01.jpg" title="Xin Chen, Plan, JFK Airport, Terminal 4 Expansion, New York, NY. For 48400: Terminal Systems, F19."><img src="../workimage/F1948400XC01.jpg" /></a>
+<a href="../workimage/S2048105KT02.png" title="Kit Tang, Santa Maria Degli Andeli Chapel Analysis, Critical Composition. For 48105: Foundation II, S20."><img src="../workimage/S2048105KT02.png" /></a>
+<a href="../workimage/S2048105ST01.png" title="Shray Tripathi, Axonometric Drawing, Addition to a Significant Residence. For 48105: Foundation II, S20."><img src="../workimage/S2048105ST01.png" /></a>
+<a href="../workimage/S2048357BN02.jpg" title="Binham Nguyen, Charcoal. For 48357: Anatomy and Organic Form, S20."><img src="../workimage/S2048357BN02.jpg" /></a>
+<a href="../workimage/S2048357KS01.jpg" title="Katherine Sharpless, Charcoal. For 48357: Anatomy and Organic Form, S20."><img src="../workimage/S2048357KS01.jpg" /></a>
+<a href="../workimage/S2048473CZ01.jpg" title="Christine Zhu, Documentation, Chair. For 48473: Hand and Machine Joinery, New Directions, S20."><img src="../workimage/S2048473CZ01.jpg" /></a>
+
+</div>
+
+<!-- put images with links to full pdfs or external video viewing here -->
+
+</div>
+
+<script>
+    new SimpleLightbox({elements: '.midview1 a'});
+</script>
+
+    <!-- for multiple middle views, duplicate last div and subset div immediately below, rename all midview2, midview3 etc. -->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="../scripts/responsivemap.js"></script>
+<script>
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+	});
+</script>
+</body>
+<footer>&#169; 2020 Carnegie Mellon University School of Architecture | All Rights Reserved</footer>
+
+</html>

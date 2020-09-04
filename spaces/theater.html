@@ -1,0 +1,82 @@
+<html>
+
+<!-- replaceall roomname with designated title -->
+<head><title>EX-CHANGE 2020 | Theater</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../scripts/baseline.css">
+<link rel="stylesheet" href="../scripts/simpleLightbox.min.css">
+<script src="../scripts/simpleLightbox.min.js"></script>
+<script src="../scripts/behavior.js"></script>
+<style>
+	#vid {
+   		position: absolute;
+		padding-top: 20%;
+		padding-left: 36.5%;
+		height: 22%;
+		width:22%;
+		pointer-events: all;
+		}
+	.vidCenter{
+   		position: absolute;
+		width:79vw;
+		height:44.2vw;
+		max-width:1600px;
+		max-height:900px;
+    	pointer-events: none;
+		}
+</style>
+</head>
+
+<!-- add any mouseover jpgs for image map between single quotes -->
+<body
+onLoad="MM_preloadImages('../images/theater/theater_archivehover.jpg','../images/theater/theater_entryhover.jpg')">
+
+<div id="topbar">
+<div style="align-content: left;" >
+<a href="../">
+<img src="../images/a.png" id="logo" alt="EX-CHANGE" onMouseOver="MM_swapImage('logo','','../images/h.gif',1)" onMouseOut="MM_swapImgRestore()"></a></div>
+<div align=right>
+    <p style="padding:.25em 1.5em 0 0;">
+    <a class="nav" href="../map.html">MAP</a><br>
+    <a class="nav" href="../info.html">INFO</a><br>
+    <a class="nav" href="../help.html">HELP</a></p></div>
+	</div>
+
+
+<div class="vidCenter">
+    <iframe id="vid" src="https://www.youtube.com/embed/kf4eGw2Oo2E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div>
+
+<img src="../images/theater/theater.jpg" width="1600" height="900" usemap="#PERSPECTIVE" id="PERSPECTIVE" border="0">
+<map name="PERSPECTIVE">
+
+<area shape="poly" coords="1204,512,1013,518,1013,290,1202,268" href="#schedule" alt="View schedule" title="View schedule"/>
+
+<area shape="poly" coords="649,611,651,648,558,646,568,610" href="archive.html" alt="To Archive (watch past events!)" title="To Archive (watch past events!)" onMouseOver="MM_swapImage('PERSPECTIVE','','../images/theater/theater_archivehover.jpg',1)" onMouseOut="MM_swapImgRestore()">
+
+<area shape="poly" coords="613,889,535,889,535,888,558,787,612,790" href="entry.html" alt="To Entry" title="To Entry" onMouseOver="MM_swapImage('PERSPECTIVE','','../images/theater/theater_entryhover.jpg',1)" onMouseOut="MM_swapImgRestore()">
+
+</map></div>
+
+
+<div class="sticky"><a class="sticky"href="#PERSPECTIVE">&#8679;</a></div>
+
+
+<div id="schedule" class="fullsize" >
+<img src="../images/scheduleposter.png ">
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="../scripts/responsivemap.js"></script>
+<script>
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+	});
+</script>
+</body>
+<footer>&#169; 2020 Carnegie Mellon University School of Architecture | All Rights Reserved</footer>
+
+</html>

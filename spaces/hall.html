@@ -1,0 +1,91 @@
+<html>
+
+<!-- replaceall roomname with designated title -->
+<head><title>EX-CHANGE 2020 | Hall</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../scripts/baseline.css">
+<link rel="stylesheet" href="../scripts/simpleLightbox.min.css">
+<script src="../scripts/simpleLightbox.min.js"></script>
+<script src="../scripts/behavior.js"></script>
+</head>
+
+<!-- add any mouseover jpgs for image map between single quotes -->
+<body
+onLoad="MM_preloadImages('../images/hall/hall_arrowtoelevatorhover.jpg','../images/hall/hall_arrowtonicheshover.jpg')">
+
+<div id="topbar">
+<div style="align-content: left;" >
+<a href="../">
+<img src="../images/a.png" id="logo" alt="EX-CHANGE" onMouseOver="MM_swapImage('logo','','../images/h.gif',1)" onMouseOut="MM_swapImgRestore()"></a></div>
+<div align=right>
+    <p style="padding:.25em 1.5em 0 0;">
+    <a class="nav" href="../map.html">MAP</a><br>
+    <a class="nav" href="../info.html">INFO</a><br>
+    <a class="nav" href="../help.html">HELP</a></p></div>
+    </div><div>
+
+<!-- replaceall TESTempty with page name sequence -->
+<img src="../images/hall/hall.jpg" width="1600" height="900" usemap="#PERSPECTIVE" id="PERSPECTIVE" border="0">
+<map name="PERSPECTIVE">
+
+<area shape="poly" coords="1415,432,1416,270,1530,246,1530,417" href="elevatoratfloor1.html" alt="To Elevator" title="To Elevator" onMouseOver="MM_swapImage('PERSPECTIVE','','../images/hall/hall_arrowtoelevatorhover.jpg',1)" onMouseOut="MM_swapImgRestore()"/>
+
+<area shape="poly" coords="1098,810,1197,817,1093,854,1022,849,969,845" href="niches.html" alt="To Niches" title="To Niches" onMouseOver="MM_swapImage('PERSPECTIVE','','../images/hall/hall_arrowtonicheshover.jpg',1)" onMouseOut="MM_swapImgRestore()"/>
+
+<area shape="poly" coords="61,694, 72,694, 89,700, 106,699, 123,696, 136,697, 143,705, 144,718, 139,759, 139,770, 145,780, 151,783, 178,781, 182,779, 188,775, 201,766, 205,752, 202,723, 199,709, 201,702, 207,696, 214,696, 238,699, 261,697, 269,699, 272,707, 266,729, 262,750, 262,771, 260,779,
+259,783, 262,802, 263,803,
+265,804, 275,800, 283,794, 286,783, 287,745, 289,733, 294,726, 303,724, 324,728, 345,730, 352,732, 354,740, 353,749, 346,766, 334,810, 334,855, 340,886, 339,893, 327,900, 210,900, 93,900, 89,897, 68,883, 65,880, 65,875, 72,838, 75,800, 74,793, 72,781, 70,761, 58,714, 57,704, 61,694" href="#" onMouseOver="MM_swapImage('PERSPECTIVE','','../images/hall/hall_chairshover.gif',1)" onMouseOut="MM_swapImgRestore()"/>
+
+<area shape="poly" coords="1459,900, 1459,856, 1458,797, 1457,747, 1456,710, 1451,704, 1429,699, 1414,693, 1401,683, 1388,676, 1382,674, 1378,667, 1383,660, 1402,653, 1421,650, 1465,645, 1510,644, 1515,643, 1516,638, 1516,631, 1520,624, 1524,618, 1524,611, 1521,601, 1522,595, 1529,595, 1539,604,
+1543,606, 1559,607,
+1565,612, 1563,619, 1561,623, 1561,641, 1562,645, 1566,646, 1588,651, 1593,655, 1596,659, 1594,664, 1589,667, 1569,679, 1548,693, 1524,702, 1520,705, 1519,710, 1520,750, 1521,815, 1522,900, 1459,900" href="#" onMouseOver="MM_swapImage('PERSPECTIVE','','../images/hall/hall_fountainhover.gif',1)" onMouseOut="MM_swapImgRestore()"/>
+
+
+</map></div>
+
+
+<!-- Audio Player. -->
+    
+<audio id="sound1" src="../sounds/57790891.mp3" preload="auto"></audio>
+<audio id="track">
+<source src="../sounds/hall_ServinUpBawdy.mp3" type="audio/mpeg" /></audio>
+
+<div id="player-container">
+<div id="play-pause" class="play">Play</div></div>
+
+<script type="text/javascript">
+    var track = document.getElementById('track');
+    var controlBtn = document.getElementById('play-pause');
+    function playPause() {
+        if (track.paused) {
+            track.play();
+            //controlBtn.textContent = "Pause";
+            controlBtn.className = "pause";
+        } else {
+            track.pause();
+             //controlBtn.textContent = "Play";
+            controlBtn.className = "play";
+        }
+    }
+
+    controlBtn.addEventListener("click", playPause);
+    track.addEventListener("ended", function() {
+      controlBtn.className = "play";
+    });
+    </script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="../scripts/responsivemap.js"></script>
+<script>
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+	});
+</script>
+<br><br>
+</body>
+<footer>Party for your ears provided by <a href="https://m.soundcloud.com/hunyrocks" target="_blank">HUNY</a>.<br><br>&#169; 2020 Carnegie Mellon University School of Architecture | All Rights Reserved</footer>
+
+</html>

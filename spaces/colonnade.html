@@ -1,0 +1,87 @@
+<html>
+
+<!-- replaceall roomname with designated title -->
+<head><title>EX-CHANGE 2020 | Colonnade</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../scripts/baseline.css">
+<script src="../scripts/behavior.js"></script>
+</head>
+
+<!-- add any mouseover jpgs for image map between single quotes -->
+<body
+onLoad="MM_preloadImages('../images/colonnade/colonnade_bridgehover.jpg','../images/colonnade/colonnade_wellhover.jpg','../images/colonnade/colonnade_cantilevercloserhover.jpg','../images/colonnade/colonnade_elevatorhover.jpg')">
+
+<div id="topbar">
+<div style="align-content: left;" >
+<a href="../">
+<img src="../images/a.png" id="logo" alt="EX-CHANGE" onMouseOver="MM_swapImage('logo','','../images/h.gif',1)" onMouseOut="MM_swapImgRestore()"></a></div>
+<div align=right>
+    <p style="padding:.25em 1.5em 0 0;">
+    <a class="nav" href="../map.html">MAP</a><br>
+    <a class="nav" href="../info.html">INFO</a><br>
+    <a class="nav" href="../help.html">HELP</a></p></div>
+    </div><div>
+
+<!-- replaceall TESTempty with page name sequence -->
+<img src="../images/colonnade/colonnade.jpg" width="1600" height="900" usemap="#PERSPECTIVE" id="PERSPECTIVE" border="0">
+<map name="PERSPECTIVE">
+   
+<area shape="poly" alt="" coords="113,528, 113,655, 77,655, 61,654, 30,653, 30,580, 30,507, 31,503, 33,504, 113,528" href="elevatoratfloor2.html" alt="To elevator" title="To elevator" onMouseOver="MM_swapImage('PERSPECTIVE','','../images/colonnade/colonnade_elevatorhover.jpg',1)" onMouseOut="MM_swapImgRestore()">
+
+<area shape="poly" alt="" coords="1282,846, 1282,842, 1366,842, 1450,842, 1478,856, 1516,873, 1512,874, 1400,874, 1288,874, 1287,870, 1282,846" href="cantilevercloser.html" alt="To Cantilever closer" title="To Cantilever closer" onMouseOver="MM_swapImage('PERSPECTIVE','','../images/colonnade/colonnade_cantilevercloserhover.jpg',1)" onMouseOut="MM_swapImgRestore()">
+
+<area shape="poly" alt="" coords="1035,884, 943,884, 852,884, 848,883, 852,882, 927,857, 973,842, 1101,842, 1105,843, 1087,853, 1035,884" href="well.html" alt="To Well" title="To Well" onMouseOver="MM_swapImage('PERSPECTIVE','','../images/colonnade/colonnade_wellhover.jpg',1)" onMouseOut="MM_swapImgRestore()">
+
+<area shape="poly" alt="" coords="685,51, 693,51, 693,129, 650,133, 582,138, 567,140, 564,137, 564,62, 606,59, 670,53, 685,51" href="bridge.html" alt="To Bridge" title="To Bridge" onMouseOver="MM_swapImage('PERSPECTIVE','','../images/colonnade/colonnade_bridgehover.jpg',1)" onMouseOut="MM_swapImgRestore()">
+
+<area shape="poly" alt="" coords="183,671, 204,671, 204,679, 203,686, 215,734, 218,741, 225,743, 271,747, 279,747, 278,738, 276,736, 277,730, 282,729, 297,730, 346,731, 388,728, 392,725, 399,701, 399,693, 399,688, 404,686, 460,692, 472,695, 472,697, 470,700, 453,752, 454,757, 452,763, 448,769, 445,777,
+438,782, 436,785,
+423,806, 420,811, 414,820, 408,829, 405,834, 395,848, 382,862, 375,874, 374,889, 372,900, 299,900, 293,895, 174,849, 159,843, 154,841, 156,836, 183,807, 185,802, 184,797, 171,776, 168,773, 162,768, 160,761, 157,755, 153,751, 150,748, 152,744, 153,738, 151,731, 136,679, 136,676, 141,673, 148,673, 183,671" href="#" onMouseOver="MM_swapImage('PERSPECTIVE','','../images/colonnade/colonnade_chairshover.gif',1)" onMouseOut="MM_swapImgRestore()">
+
+</map></div>
+
+
+<!-- Audio Player. -->
+    
+<audio id="sound1" src="../sounds/57790891.mp3" preload="auto"></audio>
+<audio id="track">
+<source src="../sounds/colonnade_Honcho.mp3" type="audio/mpeg" /></audio>
+
+<div id="player-container">
+<div id="play-pause" class="play">Play</div></div>
+
+<script type="text/javascript">
+    var track = document.getElementById('track');
+    var controlBtn = document.getElementById('play-pause');
+    function playPause() {
+        if (track.paused) {
+            track.play();
+            //controlBtn.textContent = "Pause";
+            controlBtn.className = "pause";
+        } else {
+            track.pause();
+             //controlBtn.textContent = "Play";
+            controlBtn.className = "play";
+        }
+    }
+
+    controlBtn.addEventListener("click", playPause);
+    track.addEventListener("ended", function() {
+      controlBtn.className = "play";
+    });
+    </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="../scripts/responsivemap.js"></script>
+<script>
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+	});
+</script>
+<br><br>
+</body>
+<footer>Party for your ears provided by <a href="https://m.soundcloud.com/hunyrocks" target="_blank">HUNY</a>.<br><br>&#169; 2020 Carnegie Mellon University School of Architecture | All Rights Reserved</footer>
+
+</html>
