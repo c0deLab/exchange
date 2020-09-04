@@ -1,0 +1,73 @@
+<html>
+
+<head><title>Welcome to EX-CHANGE 2020</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@400;700&display=swap" rel="stylesheet">
+<script src="scripts/behavior.js"></script>
+<style>
+body {
+        background-color:#696969;color:#000000;
+        font-family:'Encode Sans Semi Expanded',sans-serif;font-size:32px;font-weight:700;
+		    width: 80%;
+        max-width: 800;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;}
+.glance {
+  -webkit-transform: perspective(0) rotateX(0) rotateY(0); /* Safari */
+  transform: perspective(0) rotateX(0) rotateY(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  mix-blend-mode: multiply;
+}
+
+
+a {
+color:#000000;text-decoration:none;
+-webkit-transition:color .4s ease-in;-moz-transition:color .4s ease-in;-o-transition:color .4s ease-in;transition:color .4s ease-in;}
+a:link {color:#000000;text-decoration:none;}
+a:visited {color:#000000;text-decoration:none;}
+a:hover {color:#ffee21;text-decoration:none;}
+a:focus {color:#ffee21;text-decoration:none;}
+a:active {color:#000000;text-decoration:none;}
+a {color:#000000;text-decoration:none;}
+</style>
+</head>
+
+<body
+onLoad="MM_preloadImages('landing_gif.gif')">
+
+  <a href="spaces/entry.html"><img class="glance" id="img" src="images/landing_gif.gif" width="100%"></a>
+
+<p><a href="spaces/entry.html">Step inside!</a></p>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script>
+$(document ).ready(function() {
+  var x = 0.5;
+  var y = 0.5;
+  var maxRotation = 18;
+  var perspective = 1000;
+
+  $(document).mousemove(function(event){
+    var pos = [event.pageX / document.body.clientWidth, event.pageY / document.body.clientHeight];
+    for (var i=0;i < pos.length;i++) {
+      if (pos[i]<0) {
+        pos[i] = 0;
+      }
+      if (pos[i]>1) {
+        pos[i] = 1;
+      }
+    }
+    pos[0] = Math.round(((pos[0]*2)-1)*maxRotation);
+    pos[1] = Math.round(((pos[1]*-2)+1)*maxRotation);
+  $("img").css("transform", "perspective(" + perspective + ") rotateX("+pos[1]+"deg) rotateY("+pos[0]+"deg)");
+  $("img").css("-webkit-transform", "perspective(" + perspective +    ") rotateX("+pos[1]+"deg) rotateY("+pos[0]+"deg)");
+  });
+});
+</script>
+</body>
+
+</html>
